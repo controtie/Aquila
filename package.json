@@ -7,7 +7,20 @@
     "aframe-react": "^1.2.0",
     "babel-polyfill": "^6.3.14",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "babel": "^6.3.13",
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "ghpages": "0.0.3",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "scripts": {
     "build": "webpack",
@@ -15,7 +28,8 @@
     "ghpages": "npm run preghpages && ghpages -p gh-pages",
     "gh-pages": "npm run ghpages",
     "serve": "cd src && python -m SimpleHTTPServer 5555",
-    "serve-js": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot"
+    "serve-js": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot",
+    "start": "npm run serve-js && npm run serve"
   },
   "repository": {
     "type": "git",
